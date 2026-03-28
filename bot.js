@@ -158,7 +158,7 @@ async function postEventComponents(channel) {
   const innerComponents = [
     {
       type: 10,
-      content: '<:buddha:1487034693651267664> Summer BloxFruit Event — Event Rewards',
+      content: '<:buddha:1487034693651267664> Summer BloxFruit Event — **Event Rewards**',
     },
   ];
 
@@ -174,7 +174,7 @@ async function postEventComponents(channel) {
     {
       type: 10,
       content:
-        "<a:announce:1487055874521567272> To celebrate the games activity, we've launched an OFFICIAL EVENT where you can earn FREE Permanent fruits & Robux!\n" +
+        "<a:announce:1487055874521567272> To celebrate the games activity, we've launched an **OFFICIAL EVENT** where you can earn __FREE Permanent fruits & Robux__!\n" +
         '<a:flowignsand:1487055896243736658> This is a `limited-time` event and comes to an end <t:1774852200:R> ( <t:1774852200:f> ), so be sure to not miss this opportunity! <a:RobuxANIM:1487057805528666285>',
     },
     { type: 14, divider: true, spacing: 2 },
@@ -182,19 +182,19 @@ async function postEventComponents(channel) {
       type: 10,
       content:
         '<:1442164148908851220:1487058441800519680> __ EVENT REWARDS:__ <:1442164148908851220:1487058441800519680>\n' +
-        '> <:e_fc7201_0280:1487162459805716581> <@&1487126325536886914> <:e_fc7201_8100:1487165177009934346> Permanent Yeti <:Yeti:1487166315729780836> / 2,500 Robux <:e_fc7201_3444:1487166961212330205>\n' +
-        '> <:e_f5e50c_6532:1487162569901736037> <@&1487126326749040893> <:e_f5e50c_7750:1487165218298663014> Permanent Kitsune <:KitsuneFruit:1487166342497960008> / 5,000 Robux <:e_f5e50c_8142:1487167022658879520>\n' +
-        '> <:e_f8a047_1847:1487164857517342750> <@&1487126328279830710> <:e_f8a047_8717:1487165262863274045> Permanent Dragon <:dragon:1487166379122626723>/ 7,500 Robux <:e_f8a047_8533:1487167066057474069>\n' +
-        '> <:e_faec69_9471:1487164889213567097> <@&1487126329294983294> <:e_faec69_2107:1487165319389778223> All Permanent Fruits <:perm:1487166401797029971> / 10,000 Robux <:e_faec69_1777:1487167121661104199>',
+        '> <:e_fc7201_0280:1487162459805716581> <@&1487126325536886914> <:e_fc7201_8100:1487165177009934346> **Permanent Yeti** <:Yeti:1487166315729780836> / **2,500 Robux** <:e_fc7201_3444:1487166961212330205>\n' +
+        '> <:e_f5e50c_6532:1487162569901736037> <@&1487126326749040893> <:e_f5e50c_7750:1487165218298663014> **Permanent Kitsune** <:KitsuneFruit:1487166342497960008> / **5,000 Robux** <:e_f5e50c_8142:1487167022658879520>\n' +
+        '> <:e_f8a047_1847:1487164857517342750> <@&1487126328279830710> <:e_f8a047_8717:1487165262863274045> **Permanent Dragon** <:dragon:1487166379122626723>/ **7,500 Robux** <:e_f8a047_8533:1487167066057474069>\n' +
+        '> <:e_faec69_9471:1487164889213567097> <@&1487126329294983294> <:e_faec69_2107:1487165319389778223> **All Permanent Fruits** <:perm:1487166401797029971> / **10,000 Robux** <:e_faec69_1777:1487167121661104199>',
     },
     { type: 14 },
     {
       type: 10,
       content:
-        '<:e_FFAE00_4916:1487105142997127250> EVENT GUIDELINES: <:e_FFAE00_4916:1487105142997127250>\n' +
+        '<:e_FFAE00_4916:1487105142997127250> **__EVENT GUIDELINES:__** <:e_FFAE00_4916:1487105142997127250>\n' +
         "<:buddha:1487034693651267664> <:wh:1487105260387307580> Inviting alternative accounts to the event is strictly prohibited. <:e_FFAE00_8931:1487105621080801461>\n" +
         "<:buddha:1487034693651267664> <:wh:1487105260387307580> Failure to follow Discord's Terms of Service and Roblox Community Guidelines may result in removal from the event.\n\n" +
-        '<:e_FFAE00_4914:1487106191690698875> CLAIM INFORMATION: <:e_FFAE00_4914:1487106191690698875>\n' +
+        '<:e_FFAE00_4914:1487106191690698875> **__CLAIM INFORMATION:__** <:e_FFAE00_4914:1487106191690698875>\n' +
         "<:e_FFAE00_2239:1487106767551856640> Once you're completed your invites, contact an <@&1479764099607953532> to redeem! <:e_FFAE00_3461:1487107024318894233>",
     },
     { type: 14 },
