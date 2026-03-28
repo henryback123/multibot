@@ -366,7 +366,7 @@ client.on(Events.GuildMemberAdd, async member => {
   if (!wCh) return;
 
   const inviterLine = usedInvite?.inviter
-    ? `*invited by **${usedInvite.inviter.tag}** · code \`${usedInvite.code}\` · ${usedInvite.uses} uses*`
+    ? ``
     : null;
 
   // ── Plain-text Apollo-style welcome, auto-deletes after 3 seconds ─────────
