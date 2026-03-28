@@ -175,7 +175,7 @@ async function postEventComponents(channel) {
       type: 10,
       content:
         "<a:announce:1487055874521567272> To celebrate the games activity, we've launched an **OFFICIAL EVENT** where you can earn __FREE__ Permanent fruits & Robux!\n" +
-        '<a:flowignsand:1487055896243736658> This is a `limited-time` event and comes to an end <t:1774852200:R> ( <t:1774852200:f> ), so be sure to not miss this opportunity! <a:RobuxANIM:1487057805528666285>',
+        '<a:flowignsand:1487055896243736658> This is a `limited-time` event and comes to an end <t:1775637000:R> ( <t:1775637000:f> ), so be sure to not miss this opportunity! <a:RobuxANIM:1487057805528666285>',
     },
     { type: 14, divider: true, spacing: 2 },
     {
@@ -204,13 +204,13 @@ async function postEventComponents(channel) {
         {
           type: 2, style: 5,
           label: 'Check Invite',
-          url: 'https://discohook.app',
+          url: 'https://discord.com/channels/1175058945073741895/1487126342976929875',
           emoji: { name: '👋' },
         },
         {
-          type: 2, style: 2,
-          custom_id: 'p_284704454815518723',
+          type: 2, style: 5,
           label: 'How to invite?',
+          url: 'https://discord.com/channels/1175058945073741895/1487126344440615023',
           emoji: { name: '❔' },
         },
       ],
