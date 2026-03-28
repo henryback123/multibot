@@ -138,13 +138,6 @@ function buildWelcomeText(member, data, guild, inviterLine) {
     .replace(/\{server\}/gi, guild.name);
 
   const lines = [
-    `👋 Welcome to **${guild.name}**, ${member}! 🎉`,
-    ``,
-    `> You're member **#${guild.memberCount}**`,
-    data.rulesChannelId   ? `> 📌 Rules: <#${data.rulesChannelId}>`     : null,
-    data.eventChannelId   ? `> 🎁 Events: <#${data.eventChannelId}>`    : null,
-    data.generalChannelId ? `> 💬 Chat: <#${data.generalChannelId}>`    : null,
-    ``,
     customText,
     ``,
     inviterLine ?? null,
