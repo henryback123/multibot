@@ -179,27 +179,32 @@ async function postEventComponents(channel) {
         '> <:e_f5e50c_6532:1487162569901736037> <@&1487126326749040893> <:e_f5e50c_7750:1487165218298663014> **Permanent Kitsune** <:KitsuneFruit:1487360333952847994> / **5,000 Robux** <:e_f5e50c_8142:1487167022658879520>\n' +
         '> <:e_f8a047_1847:1487164857517342750> <@&1487126328279830710> <:e_f8a047_8717:1487165262863274045> **Permanent Dragon** <:dragon:1487360358409699519> / **7,500 Robux** <:e_f8a047_8533:1487167066057474069>\n' +
         '> <:e_faec69_9471:1487164889213567097> <@&1487126329294983294> <:e_faec69_2107:1487165319389778223> **All Permanent Fruits** <:perm:1487360384552796194> / **10,000 Robux** <:e_faec69_1777:1487167121661104199>',
-    },
-    { type: 14 },
+  {
+  type: 14
+},
+{
+  type: 10,
+  content:
+    '<:n1:1491814377538584687><:n2:1491814412770742383><:n3:1491814454999126096><:n4:1491814492613378149><:nrw1:1491815034534367342><:nrw2:1491815068780990525><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
+    "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Inviting alternative accounts to the event is strictly __prohibited__. <:hammer:1491820102620938271>\n" +
+    "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Failure to follow [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in removal from the event.\n\n" +
+    "<:pin:1491702917856624670> Once you're completed your invites, contact an <@&1479764099607953532> to redeem! <a:SR_Verified:1491825771373920316>",
+},
+{
+  type: 14
+},
+{
+  type: 1,
+  components: [
     {
-      type: 10,
-      content:
-        '<:n1:1491814377538584687><:n2:1491814412770742383><:n3:1491814454999126096><:n4:1491814492613378149><:nrw1:1491815034534367342><:nrw2:1491815068780990525><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
-        "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Inviting alternative accounts to the event is strictly __prohibited__. <:hammer:1491820102620938271>\n" +
-        "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Failure to follow [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in removal from the event.\n\n" +
-        "<:pin:1491702917856624670> Once you're completed your invites, contact an <@&1479764099607953532> to redeem! <a:SR_Verified:1491825771373920316>",
+      type: 2,
+      style: 5,
+      label: 'How to invite?',
+      url: 'https://discord.com/channels/1175058945073741895/1487126344440615023',
+      emoji: { name: '🐰' },
     },
-    { type: 14 },
-        {
-          type: 1, style: 5,
-          label: 'How to invite?',
-          url: 'https://discord.com/channels/1175058945073741895/1487126344440615023',
-          emoji: { name: '🐰' },
-        },
-      ],
-    },
-  );
-
+  ],
+}
   await channel.send({
     flags: 32768,
     components: [
