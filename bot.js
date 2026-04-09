@@ -184,27 +184,17 @@ async function postEventComponents(channel) {
     {
       type: 10,
       content:
-        '<:e_FFAE00_4916:1487105142997127250> **__EVENT GUIDELINES:__** <:e_FFAE00_4916:1487105142997127250>\n' +
-        "<:buddha:1487034693651267664> <:wh:1487105260387307580> Inviting alternative accounts to the event is strictly __prohibited__. <:e_FFAE00_8931:1487105621080801461>\n" +
-        "<:buddha:1487034693651267664> <:wh:1487105260387307580> Failure to follow [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in removal from the event.\n\n" +
-        '<:e_FFAE00_4914:1487106191690698875> **__CLAIM INFORMATION:__** <:e_FFAE00_4914:1487106191690698875>\n' +
-        "<:e_FFAE00_2239:1487106767551856640> Once you're completed your invites, contact an <@&1487126321321476198> to redeem! <:e_FFAE00_3461:1487107024318894233>",
+        '<:n1:1491814377538584687><:n2:1491814412770742383><:n3:1491814454999126096><:n4:1491814492613378149><:nrw1:1491815034534367342><:nrw2:1491815068780990525><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
+        "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Inviting alternative accounts to the event is strictly __prohibited__. <:hammer:1491820102620938271>\n" +
+        "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Failure to follow [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in removal from the event.\n\n" +
+        "<:pin:1491702917856624670> Once you're completed your invites, contact an <@&1479764099607953532> to redeem! <a:SR_Verified:1491825771373920316>",
     },
     { type: 14 },
-    {
-      type: 1,
-      components: [
         {
-          type: 2, style: 5,
-          label: 'Check Invite',
-          url: 'https://discord.com/channels/1175058945073741895/1487126342976929875',
-          emoji: { name: '👋' },
-        },
-        {
-          type: 2, style: 5,
+          type: 1, style: 5,
           label: 'How to invite?',
           url: 'https://discord.com/channels/1175058945073741895/1487126344440615023',
-          emoji: { name: '❔' },
+          emoji: { name: '🐰' },
         },
       ],
     },
