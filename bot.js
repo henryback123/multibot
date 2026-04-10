@@ -590,10 +590,10 @@ client.on(Events.MessageCreate, async message => {
       const total      = Math.max(count, liveUses);
 
       const tiers = [
-        { req: 1,  label: 'Permanent Yeti',      emoji: '<:Yeti:1487166315729780836>',         robux: '2,500'  },
-        { req: 3,  label: 'Permanent Kitsune',    emoji: '<:KitsuneFruit:1487166342497960008>', robux: '5,000'  },
-        { req: 6,  label: 'Permanent Dragon',     emoji: '<:dragon:1487166379122626723>',       robux: '7,500'  },
-        { req: 10, label: 'All Permanent Fruits', emoji: '<:perm:1487166401797029971>',         robux: '10,000' },
+        { req: 1,  label: '$25 Roblox Giftcard',      emoji: '<:Giftcard:1492069434288771213>',         robux: '2,500'  },
+        { req: 3,  label: '$50 Roblox Giftcard',    emoji: '<:Giftcard:1492069434288771213>', robux: '5,000'  },
+        { req: 6,  label: '$75 Roblox Giftcard',     emoji: '<:Giftcard:1492069434288771213>',       robux: '7,500'  },
+        { req: 10, label: '$100 Roblox Giftcard', emoji: '<:Giftcard:1492069434288771213>',         robux: '10,000' },
       ];
 
       const earned  = tiers.filter(t => total >= t.req);
