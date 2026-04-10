@@ -621,7 +621,7 @@ client.on(Events.MessageCreate, async message => {
             { name: '👥 Total Invites',  value: `**${total}**`,           inline: true },
             { name: '🔗 Active Links',   value: `**${theirLinks.size}**`, inline: true },
             { name: '🏅 Current Reward', value: rewardText,               inline: false },
-            { name: '⏭️ Next Reward',    value: nextText,                 inline: false },
+            { name: '<:arrow:1491804732312785038> Next Reward',    value: nextText,                 inline: false },
           )
           .setFooter({ text: `${message.guild.name} • BloxFruit Event`, iconURL: message.guild.iconURL() })
           .setTimestamp(),
