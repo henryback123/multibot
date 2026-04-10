@@ -269,9 +269,19 @@ async function sweepDeadInvites(guild) {
   }
 }
 
-// ─── READY ────────────────────────────────────────────────────────────────────
 client.once(Events.ClientReady, async () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
+
+  client.user.setPresence({
+    activities: [
+      {
+        name: "🐰 FREE Easter Roblox Giftcards",
+        type: 3, // Watching
+      },
+    ],
+    status: "online",
+  });
+
   for (const guild of client.guilds.cache.values()) {
     try {
       const inv = await guild.invites.fetch();
