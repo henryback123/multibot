@@ -151,7 +151,7 @@ async function postEventComponents(channel) {
   const innerComponents = [
     {
       type: 10,
-      content: '<:buddha:1487034693651267664> Summer BloxFruit Event — **Event Rewards**',
+      content: '<:easter_basket:1491500641997033502> Roblox Easter Event **—** **Event Rewards** ',
     },
   ];
 
@@ -167,8 +167,7 @@ innerComponents.push(
   {
     type: 10,
     content:
-      "<a:announce:1487055874521567272> To celebrate the games activity, we've launched an **OFFICIAL EVENT** where you can earn __FREE__ Permanent fruits & Robux!\n" +
-      '<a:flowignsand:1487055896243736658> This is a `limited-time` event and comes to an end <t:1775637000:R> ( <t:1775637000:f> ), so be sure to not miss this opportunity! <a:RobuxANIM:1487057805528666285>',
+      "<:dot:1491498159979892757> To celebrate **Easter**, [Roblox](https://www.roblox.com/) is givig away __free__ Roblox Giftcards up until <t:1777098600:R>. Snag these goodies while you can! <a:Easter:1491500594001744036>",
   },
 
   { type: 14, divider: true, spacing: 2 },
@@ -176,11 +175,11 @@ innerComponents.push(
   {
     type: 10,
     content:
-      '<:1442164148908851220:1487058441800519680> **__ EVENT REWARDS:__** <:1442164148908851220:1487058441800519680>\n' +
-      '> <:e_fc7201_0280:1487162459805716581> <@&1487126325536886914> <:e_fc7201_8100:1487165177009934346> **Permanent Yeti** <:Yeti:1487166315729780836> / **2,500 Robux** <:e_fc7201_3444:1487166961212330205>\n' +
-      '> <:e_f5e50c_6532:1487162569901736037> <@&1487126326749040893> <:e_f5e50c_7750:1487165218298663014> **Permanent Kitsune** <:KitsuneFruit:1487360333952847994> / **5,000 Robux** <:e_f5e50c_8142:1487167022658879520>\n' +
-      '> <:e_f8a047_1847:1487164857517342750> <@&1487126328279830710> <:e_f8a047_8717:1487165262863274045> **Permanent Dragon** <:dragon:1487360358409699519> / **7,500 Robux** <:e_f8a047_8533:1487167066057474069>\n' +
-      '> <:e_faec69_9471:1487164889213567097> <@&1487126329294983294> <:e_faec69_2107:1487165319389778223> **All Permanent Fruits** <:perm:1487360384552796194> / **10,000 Robux** <:e_faec69_1777:1487167121661104199>',
+      ' <:r1:1491803848699023482><:r2:1491803882911961289><:r3:1491803915807756530><:r4:1491803960124772543><:r5:1491804001078083817><:r6:1491804032174526534><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
+      '> <:e_ee61cf_5064:1491671230552608918> <:rw4_inv1:1491668593966977194><:rw4_inv2:1491668596433092700><:rw4_inv3:1491668598580838421><:rw4_inv4:1491668601369792544>   **=** **$__25__ Roblox Giftcard** <:PinkGift:1491673568201674763>\n' +
+      '> <:e_FFD272_8232:1491676402808782919> <:rw8_inv1:1491668689596977177><:rw8_inv2:1491668691912491068><:rw8_inv3:1491668693737013319><:rw8_inv4:1491668696752586783> **=** **$__50__ Roblox Giftcard** <:gifut:1491823089837932627>\n' +
+      '> <:e_72FF5B_1598:1491676165218238567> <:rw12_inv1:1491668800616136758><:rw12_inv2:1491668803812331561><:rw12_inv3:1491668806219599972><:rw12_inv4:1491668809596141638>  **=** **$__75__ Roblox Giftcard** <:gifurut:1491824487371640936>\n' +
+      '> <:e_4fc2ef_0089:1491675823613415497> <:rw16_inv1:1491668909936345220><:rw16_inv2:1491668912499064943><:rw16_inv3:1491668914935959583><:rw16_inv4:1491668917179912222>  **=** **$__100__ Roblox Giftcard** <:Ac_blue_gift:1491673664238649467>',
   }, // <-- THIS WAS MISSING
 
   {
@@ -207,7 +206,7 @@ innerComponents.push(
         type: 2,
         style: 5,
         label: "How to invite?",
-        url: "https://discord.com/channels/1175058945073741895/1487126344440615023",
+        url: "https://discord.com/channels/1450869495244787782/1491780111303704616",
         emoji: { name: "🐰" },
       },
     ],
