@@ -217,7 +217,7 @@ innerComponents.push(
     components: [
       {
         type: 17,
-        accent_color: 16351749,
+        accent_color: 16668834,
         spoiler: false,
         components: innerComponents,
       },
