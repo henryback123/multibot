@@ -191,7 +191,7 @@ innerComponents.push(
     content:
       '<:n1:1491814377538584687><:n2:1491814412770742383><:n3:1491814454999126096><:n4:1491814492613378149><:nrw1:1491815034534367342><:nrw2:1491815068780990525><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
       "<:Easter_egg:1491500838483656880> <:arr:1493216664483921992> Inviting **alternative accounts** to the event is strictly __prohibited__. <:hammer:1491820102620938271>\n" +
-      "<:Easter_egg:1491500838483656880> <:arr:1493216664483921992> Failure to **follow** [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in __removal__ from the event.\n\n" +
+      "<:Easter_egg:1491500838483656880> <:arr:1493216664483921992> Failure to **follow** **[Discord's Terms of Service](https://discord.com/terms)** and **[Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use)** may result in __removal__ from the event.\n\n" +
       "<:pin:1491702917856624670> Once you're done inviting, contact an <@&1491780048934670406> to redeem! <a:SR_Verified:1491825771373920316>",
   },
 
@@ -482,7 +482,7 @@ client.on(Events.MessageCreate, async message => {
     if (wizards.has(message.author.id)) return message.reply('⚠️ You have an active wizard. Type `cancel` first.');
     wizards.set(message.author.id, { type: 'event', step: 0, data: {}, channelId: message.channel.id });
     return message.channel.send({ embeds: [
-      new EmbedBuilder().setColor(0xFF8C00).setTitle('🛠️ Event Setup').setDescription('Which channel should the event be posted in?\n\n' + EVENT_STEPS[0].prompt),
+      new EmbedBuilder().setColor(fd58a2).setTitle('🛠️ Event Setup').setDescription('Which channel should the event be posted in?\n\n' + EVENT_STEPS[0].prompt),
       wizardStatusEmbed(EVENT_STEPS, 0, settings, 'Event'),
     ]});
   }
