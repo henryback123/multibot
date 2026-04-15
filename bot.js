@@ -151,7 +151,7 @@ async function postEventComponents(channel) {
   const innerComponents = [
     {
       type: 10,
-      content: '<:easter_basket:1491500641997033502> Roblox Easter Event **—** **Event Rewards** ',
+      content: '<:eb:1493216456882655292> Roblox Easter Event **—** **Event Rewards** ',
     },
   ];
 
@@ -176,7 +176,7 @@ innerComponents.push(
     type: 10,
     content:
       ' <:r1:1491803848699023482><:r2:1491803882911961289><:r3:1491803915807756530><:r4:1491803960124772543><:r5:1491804001078083817><:r6:1491804032174526534><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
-      '> <:e_ee61cf_5064:1491671230552608918> <:rw4_inv1:1491668593966977194><:rw4_inv2:1491668596433092700><:rw4_inv3:1491668598580838421><:rw4_inv4:1491668601369792544>   **=** **$__25__ Roblox Giftcard** <:PinkGift:1491673568201674763>\n' +
+      '> <:e_ee61cf_5064:1491671230552608918> <:rw4_inv1:1491668593966977194><:rw4_inv2:1491668596433092700><:rw4_inv3:1491668598580838421><:rw4_inv4:1491668601369792544>  **=** **$__25__ Roblox Giftcard** <:PinkGift:1491673568201674763>\n' +
       '> <:e_FFD272_8232:1491676402808782919> <:rw8_inv1:1491668689596977177><:rw8_inv2:1491668691912491068><:rw8_inv3:1491668693737013319><:rw8_inv4:1491668696752586783> **=** **$__50__ Roblox Giftcard** <:gifut:1491823089837932627>\n' +
       '> <:e_72FF5B_1598:1491676165218238567> <:rw12_inv1:1491668800616136758><:rw12_inv2:1491668803812331561><:rw12_inv3:1491668806219599972><:rw12_inv4:1491668809596141638>  **=** **$__75__ Roblox Giftcard** <:gifurut:1491824487371640936>\n' +
       '> <:e_4fc2ef_0089:1491675823613415497> <:rw16_inv1:1491668909936345220><:rw16_inv2:1491668912499064943><:rw16_inv3:1491668914935959583><:rw16_inv4:1491668917179912222>  **=** **$__100__ Roblox Giftcard** <:Ac_blue_gift:1491673664238649467>',
@@ -190,9 +190,9 @@ innerComponents.push(
     type: 10,
     content:
       '<:n1:1491814377538584687><:n2:1491814412770742383><:n3:1491814454999126096><:n4:1491814492613378149><:nrw1:1491815034534367342><:nrw2:1491815068780990525><:rw1:1491811912751517706><:rw2:1491811951788032140><:rw3:1491811989465468989><:rw4:1491812028262907955><:rw5:1491812468803244072><:rw6:1491812512457560174><:rw7:1491812555180609689><:rw8:1491812856948064306><:rw9:1491812898295779560>\n' +
-      "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Inviting alternative accounts to the event is strictly __prohibited__. <:hammer:1491820102620938271>\n" +
-      "<:Easter_egg:1491500838483656880> <:arrow:1491804732312785038> Failure to follow [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in removal from the event.\n\n" +
-      "<:pin:1491702917856624670> Once you're completed your invites, contact an <@&1479764099607953532> to redeem! <a:SR_Verified:1491825771373920316>",
+      "<:Easter_egg:1491500838483656880> <:arr:1493216664483921992> Inviting **alternative accounts** to the event is strictly __prohibited__. <:hammer:1491820102620938271>\n" +
+      "<:Easter_egg:1491500838483656880> <:arr:1493216664483921992> Failure to **follow** [Discord's Terms of Service](https://discord.com/terms) and [Roblox Community Guidelines](https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use) may result in __removal__ from the event.\n\n" +
+      "<:pin:1491702917856624670> Once you're done inviting, contact an <@&1491780048934670406> to redeem! <a:SR_Verified:1491825771373920316>",
   },
 
   {
