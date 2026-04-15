@@ -51,7 +51,6 @@ const settings = {
 const inviteCache  = new Map();
 const inviterStats = new Map();
 const lastSweepAt  = new Map();
-const whitelist    = new Map();
 
 function trackInviter(guildId, userId) {
   if (!inviterStats.has(guildId)) inviterStats.set(guildId, new Map());
@@ -730,127 +729,54 @@ client.on(Events.MessageCreate, async message => {
     }
   }
 
-    // ── !wl @user ───────────────────────────────────────────────────────────
-  if (cmd === 'wl') {
-    const target = message.mentions.users.first();
-    if (!target) return message.reply('❌ Mention a user.');
+  // ── !help ──────────────────────────────────────────────────────────────────
+  if (cmd === 'help') {
+    const embed = new EmbedBuilder()
+      .setColor(0xF9A81D)
+      .setTitle('\u{1F34A} BloxFruit Bot \u2014 Commands')
+      .setDescription(
+        'All commands require **Administrator** permission' +
+        (CONFIG.ADMIN_ROLE_ID ? ' or the configured admin role' : '') +
+        '. Prefix: `!`'
+      )
+      .addFields(
+        {
+          name: '\u{1F4E8} Invites',
+          value:
+            '`!invites` \u2014 your personal invite stats + reward progress\n' +
+            '`!invites @user` \u2014 check someone else\'s stats\n' +
+            '`!invitelb` \u2014 top 10 invite leaderboard\n' +
+            '`!counts` \u2014 total invite links & uses across the whole server',
+        },
+        {
+          name: '\u{1F512} Moderation',
+          value: '`!revoke <uses> <amount>` \u2014 bulk delete invites\nExample: `!revoke 3 100` deletes up to 100 invites with 3 or fewer uses',
+        },
+        {
+          name: '\u{1F6E0}\uFE0F Setup',
+          value:
+            '`!setwelcome` \u2014 set welcome channel + custom message (3 steps)\n' +
+            '`!setevent` \u2014 post the BloxFruit event embed\n' +
+            '`!setlog #channel` \u2014 set the channel for invite & auto-revoke logs',
+        },
+        {
+          name: '\u{1F4CB} Logs',
+          value: '`!logs` \u2014 view the last 10 log entries (invite created/deleted + auto-revokes)',
+        },
+        {
+          name: '\u{1F527} Utility',
+          value: '`!test` \u2014 full health check on the bot',
+        },
+        {
+          name: '\u2699\uFE0F Auto-Revoke',
+          value: '\u{1F9F9} Autorevoke',
+        },
+      )
+      .setFooter({ text: `${message.guild.name} \u2022 BloxFruit Event Bot`, iconURL: message.guild.iconURL() })
+      .setTimestamp();
 
-    if (!whitelist.has(message.guild.id)) {
-      whitelist.set(message.guild.id, new Set());
-    }
-
-    whitelist.get(message.guild.id).add(target.id);
-
-    return message.reply({
-      embeds: [
-        new EmbedBuilder()
-          .setColor(0x57F287)
-          .setTitle('✅ User Whitelisted')
-          .setDescription(`${target} has been added to WL.`)
-          .setTimestamp(),
-      ],
-    });
+    return message.reply({ embeds: [embed] });
   }
-
-  // ── !unwl @user ────────────────────────────────────────────────────────
-  if (cmd === 'unwl') {
-    const target = message.mentions.users.first();
-    if (!target) return message.reply('❌ Mention a user.');
-
-    const guildWL = whitelist.get(message.guild.id);
-    if (!guildWL || !guildWL.has(target.id)) {
-      return message.reply('❌ User is not in WL.');
-    }
-
-    guildWL.delete(target.id);
-
-    return message.reply({
-      embeds: [
-        new EmbedBuilder()
-          .setColor(0xFF4444)
-          .setTitle('❌ User Removed')
-          .setDescription(`${target} has been removed from WL.`)
-          .setTimestamp(),
-      ],
-    });
-  }
-
-  // ── !wllist ────────────────────────────────────────────────────────────
-  if (cmd === 'wllist') {
-    const guildWL = whitelist.get(message.guild.id);
-
-    if (!guildWL || guildWL.size === 0) {
-      return message.reply('📋 WL is empty.');
-    }
-
-    const users = [...guildWL].map(id => `<@${id}>`).join('\n');
-
-    return message.reply({
-      embeds: [
-        new EmbedBuilder()
-          .setColor(0x5865F2)
-          .setTitle('📋 Whitelist Users')
-          .setDescription(users)
-          .setTimestamp(),
-      ],
-    });
-  }
-
-// ── !help ──────────────────────────────────────────────────────────────────
-if (cmd === 'help') {
-  const embed = new EmbedBuilder()
-    .setColor(0xF9A81D)
-    .setTitle('\u{1F34A} BloxFruit Bot \u2014 Commands')
-    .setDescription(
-      'All commands require **Administrator** permission' +
-      (CONFIG.ADMIN_ROLE_ID ? ' or the configured admin role' : '') +
-      '. Prefix: `!`'
-    )
-    .addFields(
-      {
-        name: '\u{1F4E8} Invites',
-        value:
-          '`!invites` \u2014 your personal invite stats + reward progress\n' +
-          '`!invites @user` \u2014 check someone else\'s stats\n' +
-          '`!invitelb` \u2014 top 10 invite leaderboard\n' +
-          '`!counts` \u2014 total invite links & uses across the whole server',
-      },
-      {
-        name: '\u{1F512} Moderation',
-        value: '`!revoke <uses> <amount>` \u2014 bulk delete invites\nExample: `!revoke 3 100` deletes up to 100 invites with 3 or fewer uses',
-      },
-      {
-        name: '\u{1F6E0}\uFE0F Setup',
-        value:
-          '`!setwelcome` \u2014 set welcome channel + custom message (3 steps)\n' +
-          '`!setevent` \u2014 post the BloxFruit event embed\n' +
-          '`!setlog #channel` \u2014 set the channel for invite & auto-revoke logs',
-      },
-      {
-        name: '\u{1F4CB} Logs',
-        value: '`!logs` \u2014 view the last 10 log entries (invite created/deleted + auto-revokes)',
-      },
-      {
-        name: '\u{1F527} Utility',
-        value: '`!test` \u2014 full health check on the bot',
-      },
-      {
-        name: '\u2699\uFE0F Auto-Revoke',
-        value: '\u{1F9F9} Autorevoke',
-      },
-      {
-        name: '📜 Whitelist System',
-        value:
-          '`!wl add @user` — add user to whitelist\n' +
-          '`!wl remove @user` — remove user from whitelist\n' +
-          '`!wl list` — view all whitelisted users',
-      },
-    )
-    .setFooter({ text: `${message.guild.name} \u2022 BloxFruit Event Bot`, iconURL: message.guild.iconURL() })
-    .setTimestamp();
-
-  return message.reply({ embeds: [embed] });
-}
 
   // ── !test ─────────────────────────────────────────────────────────────────
   if (cmd === 'test') {
