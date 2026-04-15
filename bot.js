@@ -482,7 +482,7 @@ client.on(Events.MessageCreate, async message => {
     if (wizards.has(message.author.id)) return message.reply('⚠️ You have an active wizard. Type `cancel` first.');
     wizards.set(message.author.id, { type: 'event', step: 0, data: {}, channelId: message.channel.id });
     return message.channel.send({ embeds: [
-      new EmbedBuilder().setColor(fd58a2).setTitle('🛠️ Event Setup').setDescription('Which channel should the event be posted in?\n\n' + EVENT_STEPS[0].prompt),
+      new EmbedBuilder().setColor(0xFD58A2).setTitle('🛠️ Event Setup').setDescription('Which channel should the event be posted in?\n\n' + EVENT_STEPS[0].prompt),
       wizardStatusEmbed(EVENT_STEPS, 0, settings, 'Event'),
     ]});
   }
