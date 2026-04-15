@@ -275,7 +275,7 @@ client.once(Events.ClientReady, async () => {
   client.user.setPresence({
     activities: [
       {
-        name: "🐰 FREE Easter Roblox Giftcards",
+        name: "🐰 Handling our Giftcards!",
         type: 3, // Watching
       },
     ],
