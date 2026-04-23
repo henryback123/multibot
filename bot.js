@@ -28,8 +28,8 @@ const CONFIG = {
   EVENT_BANNER_URL:     process.env.EVENT_BANNER_URL ?? null,
   ADMIN_ROLE_ID:        process.env.ADMIN_ROLE_ID ?? null,
   PREFIX:               '!',
-  SWEEP_LINK_THRESHOLD: 890,
-  SWEEP_AMOUNT:         5,
+  SWEEP_LINK_THRESHOLD:  1000,
+  SWEEP_AMOUNT:         70,
   SWEEP_MIN_USES:       3,
 };
 
