@@ -28,8 +28,8 @@ const CONFIG = {
   EVENT_BANNER_URL:     process.env.EVENT_BANNER_URL ?? null,
   ADMIN_ROLE_ID:        process.env.ADMIN_ROLE_ID ?? null,
   PREFIX:               '!',
-  SWEEP_LINK_THRESHOLD: 1000,
-  SWEEP_AMOUNT:         100,
+  SWEEP_LINK_THRESHOLD: 885,
+  SWEEP_AMOUNT:         5,
   SWEEP_MIN_USES:       3,
 };
 
@@ -308,13 +308,13 @@ client.on(Events.InviteCreate, async inv => {
   await sendLog(inv.guild, logMsg);
 
   try {
-    const currentCount = typeof totalLinks === 'number' ? totalLinks : 0;
-    const lastAt       = lastSweepAt.get(inv.guild.id) ?? 0;
-    const crossed      = Math.floor(currentCount / CONFIG.SWEEP_LINK_THRESHOLD);
-    const lastCrossed  = Math.floor(lastAt / CONFIG.SWEEP_LINK_THRESHOLD);
+if (typeof totalLinks !== 'number') return;
 
-    if (crossed > lastCrossed) {
-      lastSweepAt.set(inv.guild.id, currentCount);
+const currentCount = totalLinks;
+const lastCount = lastSweepAt.get(inv.guild.id) ?? 0;
+
+if (currentCount - lastCount >= CONFIG.SWEEP_LINK_THRESHOLD) {
+  lastSweepAt.set(inv.guild.id, currentCount);
       console.log(`🧹 [${inv.guild.name}] Hit ${currentCount} invite links — triggering auto-revoke...`);
 
       const { swept, codes } = await sweepDeadInvites(inv.guild);
